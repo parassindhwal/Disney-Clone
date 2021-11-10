@@ -1,0 +1,22 @@
+
+/* @media (pointer: coarse) {
+    .slick-prev, .slick-next {
+        display: none !important;
+    }
+
+} */
+
+.slick-prev {
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+.slick-next {
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+.mast-rapper {
+    /* height: 30vh; */
+}

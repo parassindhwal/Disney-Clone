@@ -1,0 +1,129 @@
+.banner {
+    position: relative;
+    color: white;
+    object-fit: cover;
+    /* height: 448px; */
+    width: 100vw;
+    height: 90vh;
+    margin-top: 10vh;
+}
+
+@media (max-width: 768px) {
+    /* .banner {
+        height: 30vh;
+        width: 100%;
+    } */
+}
+
+.banner__contents {
+    position: absolute;
+    top: 60%;
+    margin-left: 30px;
+    /* padding-top: 140px; */
+    height: 190px;
+    z-index: 5;
+}
+
+.banner__title {
+    font-size: 3rem;
+    font-weight: 800;
+    padding-bottom: 0.3rem;
+    color: #fff;
+}
+
+.banner__info {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.meta__data {
+    position: relative;
+    padding-right: 20px;
+}
+
+.meta__data.year {
+    padding-left: 20px;
+}
+
+@media (min-width: 786px) {
+    
+    .meta__data::after {
+        position: absolute;
+        content: '';
+        right: 0;
+        top: 50%;
+        transform: translateY(-25%);
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: #ccc;
+}
+}
+.banner__genre {
+    padding-left: 10px;
+}
+.banner__genre > span {
+ padding-left: 10px;
+}
+
+.banner__description {
+    width: 45rem;
+    line-height: 1.3;
+    padding-top: 1rem;
+    font-size: 0.8rem;
+    /* max-width: 360px; */
+    height: 80px;
+    color: #fff;
+}
+
+.banner--fadeBottom {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 8rem;
+    background-image: linear-gradient(180deg, transparent, rgba(37, 37, 37, 0.61), #111);
+}
+
+.banner__button {
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    border-radius: 0.2vw;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-right: 1rem;
+    padding-top: 0.5rem;
+    background-color: rgba(51, 51, 51, 0.51);
+    padding-bottom: 0.5rem;
+}
+
+.banner__button:hover {
+    color: #000;
+    background-color: #e6e6e6;
+    transition: all 0.2s;
+}
+
+@media (max-width: 768px) {
+    .banner__contents {
+        max-width: 400px;
+        margin-left: 10px;
+    }
+    .banner__description {
+        width: auto;
+    }
+    .banner__info {
+        flex-direction: column;
+    }
+    .meta__data.year {
+        padding-left: 0;
+    }
+    .banner__genre {
+        padding-left: 0;
+    }
+    .banner__genre > span {
+        padding-left: 0;
+        padding-right: 10px;
+    }
+}

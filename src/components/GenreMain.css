@@ -1,0 +1,32 @@
+.genre {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.genre__posters__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: wrap;
+}
+
+.genre__posters__wrapper__main {
+    height: 200px;
+    width: 300px;
+    padding: 5px 10px;
+}
+
+.genre__posters__wrapper__main > .genreMain__poster {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 350ms ease-in;
+    border-radius: 10px;
+}
+
+.genre__posters__wrapper__main:hover > .genreMain__poster {
+    transform: scale(1.2);
+}
